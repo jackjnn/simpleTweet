@@ -35,7 +35,7 @@
         android:layout_marginStart="5dp"
         android:layout_marginTop="2dp"
         android:layout_toEndOf="@+id/ivProfileImage"
-        tools:text="This is a tweet about nothing" />
+        tools:text="This fimis a tweet about nothing" />
 
     <TextView
         android:id="@+id/timeStamp_txt"
