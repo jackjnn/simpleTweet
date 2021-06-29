@@ -50,6 +50,12 @@ Here's a walkthrough of implemented user stories:
 
 <img src='https://github.com/jackjnn/simpleTweet/blob/master/twitterlogin.gif' title='Video Walkthrough' width='500' alt='log in' />
 
+💡 Scroll through feed
+
+<img src='https://github.com/jackjnn/simpleTweet/blob/master/twitterlogin.gif' title='Video Walkthrough' width='500' alt='scroll through feed' />
+
+🔥 Compose new Tweet
+
 GIF created with [Kap](https://getkap.co/).
 
 ## Notes
