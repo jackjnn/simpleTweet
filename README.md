@@ -46,7 +46,9 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+👌 Log in to your Twitter
+
+<img src='https://github.com/jackjnn/simpleTweet/blob/master/twitterlogin.gif' title='Video Walkthrough' width='500' alt='log in' />
 
 GIF created with [Kap](https://getkap.co/).
 
