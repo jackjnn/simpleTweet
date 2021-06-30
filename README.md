@@ -52,7 +52,7 @@ Here's a walkthrough of implemented user stories:
 
 💡 Scroll through feed
 
-<img src='https://github.com/jackjnn/simpleTweet/blob/master/twitterscroll.gif' title='Video Walkthrough' width='500' alt='scroll through feed' />
+<img src='https://github.com/jackjnn/simpleTweet/blob/master/twitterscroll3.gif' title='Video Walkthrough' width='500' alt='scroll through feed' />
 
 ✍🏾 Compose new Tweet
 
