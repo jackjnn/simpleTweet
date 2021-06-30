@@ -2,6 +2,7 @@ package com.codepath.apps.restclienttemplate;
 
 import android.content.Context;
 import android.text.format.DateUtils;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.codepath.apps.restclienttemplate.models.Tweet;
+import jp.wasabeef.glide.transformations.RoundedCornersTransformation;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -70,6 +72,7 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
         TextView tvBody;
         TextView tvScreenName;
         TextView tvTimeStamp;
+        ImageView ivBodyImage;
 
         public ViewHolder(@NotNull View itemView) {
             super(itemView);
@@ -77,6 +80,7 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
             tvBody = itemView.findViewById(R.id.tvBody);
             tvScreenName = itemView.findViewById(R.id.tvScreenName);
             tvTimeStamp = itemView.findViewById(R.id.timeStamp_txt);
+            ivBodyImage = itemView.findViewById(R.id.ivBodyImage);
         }
 
         public void bind(Tweet tweet) {
@@ -86,6 +90,13 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
                     .load(tweet.user.profileImageUrl)
                     .into(ivProfileImage);
             tvTimeStamp.setText(getRelativeTimeAgo(tweet.createdAt));
+            if (tweet.hasMedia){
+                ivBodyImage.setVisibility(View.VISIBLE);
+                Log.i("TweetsAdapter","tweet has media");
+                Glide.with(context).load(tweet.firstEmbeddedImage).centerCrop().transform(new RoundedCornersTransformation(20, 5)).into(ivBodyImage);
+            } else {
+                ivBodyImage.setVisibility(View.GONE);
+            }
         }
 
         // getRelativeTimeAgo("Mon Apr 01 21:16:23 +0000 2014");

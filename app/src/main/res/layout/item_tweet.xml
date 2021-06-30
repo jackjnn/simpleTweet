@@ -34,8 +34,9 @@
         android:layout_below="@+id/tvScreenName"
         android:layout_marginStart="5dp"
         android:layout_marginTop="2dp"
+        android:layout_marginBottom="28dp"
         android:layout_toEndOf="@+id/ivProfileImage"
-        tools:text="This fimis a tweet about nothing" />
+        tools:text="This is a tweet about nothing" />
 
     <TextView
         android:id="@+id/timeStamp_txt"
@@ -44,4 +45,11 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/ivBodyImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/tvBody"
+        tools:srcCompat="@tools:sample/avatars" />
 </RelativeLayout>
